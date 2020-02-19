@@ -1,24 +1,76 @@
-# Btn
+Material Button (Angular)
+===
+Angular Material Button
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+Installation
+====
+Install lms-btn with npm:
+```
+$ npm install --save lms-btn
+```
 
-## Code scaffolding
+Usage
+===
+```
+<lms-button 
+disabled="false"  
+buttonText="Save" 
+(click)="save()">
+</lms-button>
+```
+Steps to Follow 
+===
+* Install Angular Material.
+```
+ $ ng add @angular/material@8.2.3
+```
+* Import ```lms-btn``` module in ```app.module.ts``` file.
+```
+import { BtnModule } from 'lms-btn';
 
-Run `ng generate component component-name --project btn` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project btn`.
-> Note: Don't forget to add `--project btn` or else it will be added to the default project in your `angular.json` file. 
+imports: [
+  ...,
+    BtnModule
+  ],
+```
+* In ```app.component.html``` , add the following 
 
-## Build
+```
+<lms-button 
+disabled="false"  
+buttonText="Save" 
+(click)="save()">
+</lms-button>
+```
+* In ```app.component.ts``` , add the following 
 
-Run `ng build btn` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+export class AppComponent {
+  
+  title = 'app-component';
+ 
+ save() {
+ console.log('Button Clicked!');
+ }
 
-## Publishing
+}
+```
+* Final Result looks like 
 
-After building your library with `ng build btn`, go to the dist folder `cd dist/btn` and run `npm publish`.
+![Look of lms-btn](https://user-images.githubusercontent.com/40655047/74837754-329b2300-5348-11ea-9c31-2205d77cf796.png)
 
-## Running unit tests
 
-Run `ng test btn` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+Params
+===
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ Name| Type | Description
+------------ | ------------- | -------------
+disabled | Boolean | Set to ```true``` to disable button
+buttonText | String | Sets label to button
+click | fn() | Click on Button will call this function
+
+
+
+Happy Coding ! :stuck_out_tongue_closed_eyes:
+===
