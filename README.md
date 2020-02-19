@@ -57,7 +57,7 @@ export class AppComponent {
 ```
 * Final Result looks like 
 
-![Look of lms-btn](https://raw.githubusercontent.com/renu0627/lms-button/master/src/assets/lms-btn.png)
+![Look of lms-btn](https://user-images.githubusercontent.com/40655047/74837754-329b2300-5348-11ea-9c31-2205d77cf796.png)
 
 
 
@@ -73,5 +73,4 @@ click | fn() | Click on Button will call this function
 
 
 Happy Coding ! :stuck_out_tongue_closed_eyes:
-===# btn
-# btn
+
