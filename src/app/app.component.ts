@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lms-button';
+  ngOnInit() {
+  }
+
+  save() {
+    console.log("Hey Hi!!!!!!!!!");
+  }
+  goBack() {
+    console.log("Hey Hi!!!!!!!!!");
+  }
 }

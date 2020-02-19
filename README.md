@@ -1,27 +1,76 @@
-# LmsButton
+Material Button (Angular)
+===
+Angular Material Button
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
+Installation
+====
+Install lms-btn with npm:
+```
+$ npm install --save lms-btn
+```
 
-## Development server
+Usage
+===
+```
+<lms-button 
+disabled="false"  
+buttonText="Save" 
+(click)="save()">
+</lms-button>
+```
+Steps to Follow 
+===
+* Install Angular Material.
+```
+ $ ng add @angular/material@8.2.3
+```
+* Import ```lms-btn``` module in ```app.module.ts``` file.
+```
+import { BtnModule } from 'lms-btn';
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+imports: [
+  ...,
+    BtnModule
+  ],
+```
+* In ```app.component.html``` , add the following 
 
-## Code scaffolding
+```
+<lms-button 
+disabled="false"  
+buttonText="Save" 
+(click)="save()">
+</lms-button>
+```
+* In ```app.component.ts``` , add the following 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+export class AppComponent {
+  
+  title = 'app-component';
+ 
+ save() {
+ console.log('Button Clicked!');
+ }
 
-## Build
+}
+```
+* Final Result looks like 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![Look of lms-btn](https://raw.githubusercontent.com/renu0627/lms-button/master/src/assets/lms-btn.png)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Params
+===
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ Name| Type | Description
+------------ | ------------- | -------------
+disabled | Boolean | Set to ```true``` to disable button
+buttonText | String | Sets label to button
+click | fn() | Click on Button will call this function
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Happy Coding ! :stuck_out_tongue_closed_eyes:
+===
